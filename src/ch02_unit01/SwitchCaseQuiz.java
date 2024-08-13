@@ -2,7 +2,7 @@ package ch02_unit01;
 
 import java.util.Scanner;
 
-public class SwitchCaseWord {
+public class SwitchCaseQuiz {
 
 
 
@@ -59,38 +59,43 @@ public class SwitchCaseWord {
 //        }
 
 
-//        System.out.print("연도 입력 : ");
-//        int year = sc.nextInt();
-//        System.out.print("월 입력 : ");
-//        int month = sc.nextInt();
-//
-//        switch (month){
-//            case 1:
-//            case 3:
-//            case 5:
-//            case 7:
-//            case 8:
-//            case 10:
-//            case 12:
-//                System.out.println(year + "년 "+ month + "월은 31일까지 있습니다.");
-//                break;
-//            case 4:
-//            case 6:
-//            case 9:
-//            case 11:
-//                System.out.println(year + "년 "+ month + "월은 30일까지 있습니다.");
-//                break;
-//            case 2:
-//                if(year%4 == 0 && year%100 !=0 || year% 400 == 0){
-//                    System.out.println(year + "년 "+ month + "월은 29일까지 있습니다.");
-//                } else {
-//                    System.out.println( year + "년 "+ month + "월은 28일까지 있습니다.");
-//                }
-//                break;
-//            default:
-//                System.out.println("월을 잘못 입력하셨습니다.");
-//                break;
-//        }
+
+        // 3
+
+        System.out.print("연도 입력 : ");
+        int year = sc.nextInt();
+        System.out.print("월 입력 : ");
+        int month = sc.nextInt();
+
+        switch (month){
+            case 1:
+            case 3:
+            case 5:
+            case 7:
+            case 8:
+            case 10:
+            case 12:
+                System.out.println(year + "년 "+ month + "월은 31일까지 있습니다.");
+                break;
+            case 4:
+            case 6:
+            case 9:
+            case 11:
+                System.out.println(year + "년 "+ month + "월은 30일까지 있습니다.");
+                break;
+            case 2:
+                if(year%4 == 0 && year%100 !=0 || year% 400 == 0){
+                    System.out.println(year + "년 "+ month + "월은 29일까지 있습니다.");
+                } else {
+                    System.out.println( year + "년 "+ month + "월은 28일까지 있습니다.");
+                }
+                // 조건 삼항식
+                // String result = (year%4 == 0 && year%100 !=0 || year% 400 == 0) ? "29" : "28";
+                break;
+            default:
+                System.out.println("월을 잘못 입력하셨습니다.");
+                break;
+        }
 
 
         sc.close();
